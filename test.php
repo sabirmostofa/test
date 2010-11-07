@@ -2,9 +2,9 @@
 class GitBuster
 {
     public static function tracker(){
-		                      echo 'hello';
+		                      echo 'hello';		                  
 		
 		                    }
-
-
 }
+
+GitBuster::tracker();
