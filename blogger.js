@@ -11,5 +11,13 @@ $("#test22").click(function(){
 $("#test2").click(function(){
   $("#test222").animate({"left": "-=50px"}, "slow");
 });
+//table editing
+$('#test3').css('border','1px solid black');
+$('#test3 td').css('border','1px solid black');
+$('#test3 tr').filter(':even').css('background-color','green');
+
+$('#test33').click(function(){
+$('#test3 tr').filter(':even').animate({opacity:'toggle'},'slow');
+});
 
 });
