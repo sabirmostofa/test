@@ -19,9 +19,23 @@ $('#test3 tr').filter(':even').css('background-color','green');
 $('#test33').click(function(){
 $('#test3 tr').filter(':even').animate({opacity:'toggle'},'slow');
 });
-
 $('#test333').click(function(){
 $('#test3 td:contains(More)').css('background-color','red');
 });
-
-});
+//more less function
+	$('p:eq(1)').hide();
+	$('a.less').hide();
+	$('a.more').click(function(){
+		$('p:eq(1)').slideDown('slow');
+		$('a.more').hide();
+		$('a.less').fadeIn('slow');
+		return false;				
+		});			
+	$('a.less').click(function(){
+		$('p:eq(1)').slideUp('slow');
+		$('a.less').hide();
+		$('a.more').fadeIn('slow');
+		return false;
+				
+		});	
+});//end of main parentheses
