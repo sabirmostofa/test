@@ -20,4 +20,8 @@ $('#test33').click(function(){
 $('#test3 tr').filter(':even').animate({opacity:'toggle'},'slow');
 });
 
+$('#test333').click(function(){
+$('#test3 td:contains(More)').css('background-color','red');
+});
+
 });
