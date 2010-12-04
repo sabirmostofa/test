@@ -1,0 +1,43 @@
+
+     .text{
+	
+	    }
+	
+	 #ulist{
+		color:red;	
+	}
+		 
+	.textColor{
+	color:green;
+	}
+	.textYellow{
+	color:yellow;
+	list-style:none;
+	}
+	.marker{
+	width:500px;
+	}
+	
+	.alt{
+	background-color:green;
+	}
+#default{
+}
+/* Ajax Stylesheet*/
+.letters{
+width:100px;
+height:800px;
+border-right:1px solid black;
+float:left
+
+}
+#dictionary{
+float:left;
+width:500px;
+height:100%;
+margin-left:20px;
+}
+.colored{
+background-color:green;
+border-bottom:4px solid red;
+}
