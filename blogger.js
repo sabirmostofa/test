@@ -38,4 +38,13 @@ $('#test3 td:contains(More)').css('background-color','red');
 		return false;
 				
 		});	
+		
+		//post5		
+		$('#post5').toggle(function(){
+			$('#post5 div').animate({'width':'400px'},'slow').text('click to squeeze!');
+			},
+		function(){
+			$('#post5 div').animate({'width':'200px'},'slow').text('click to make large!');
+			}		
+		);
 });//end of main parentheses
