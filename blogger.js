@@ -47,4 +47,20 @@ $('#test3 td:contains(More)').css('background-color','red');
 			$('#post5 div').animate({'width':'200px'},'slow').text('click to make large!');
 			}		
 		);
+		
+		//ajax
+$('#post6').click(function() {
+  $.get('atom.xml', function(data) {
+    $('#ajaxpost6').empty();
+    $(data).find('entry').each(function() {
+      var $entry = $(this);
+      var html = '<div class="entry">';      
+      html += $entry.find('title').text();      
+      html += '</div>';
+      $('#ajaxpost6').append($(html));
+    });
+  });
+  return false;
+});
+
 });//end of main parentheses
